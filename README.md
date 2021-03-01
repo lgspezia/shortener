@@ -1,7 +1,6 @@
 ### Encurtador de Links - NODE
 
-roteiro de trabalho,
-informações técnicas sobre a solução na documentação 
+Roteiro de trabalho e informações técnicas sobre a solução na documentação 
 
 ### Para executar
 
@@ -20,14 +19,14 @@ $ npm run dev
 
 ## com docker
 ```bash
-$ docker-compose up #para acompanhar o log
+$ docker-compose up #com log
 ```
 ou
 ```bash
-$ docker-compose up -d #para executar sem acompanhar o log
+$ docker-compose up -d #executa sem log
 ```
 ## requisitos
-- possuir o docker vLTS instalado
+- instalar o docker vLTS
 
 ## Para executar testes
 
