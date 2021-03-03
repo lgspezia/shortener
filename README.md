@@ -7,7 +7,7 @@ Roteiro de trabalho e informações técnicas sobre a solução na documentaçã
 - criar um arquivo .env criando uma cópia do .env.example
 
 ```bash
-$ npm i
+$ npm install
 ```
 
 ```bash
