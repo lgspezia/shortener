@@ -21,7 +21,7 @@
       }
 
       #input-area {
-        background: rgb(56, 68, 24);
+        background: rgb(68, 65, 24);
         grid-column: 2/4;
         grid-row: 2;
         height: fit-content;
@@ -39,7 +39,7 @@
       }
 
       .available {
-        color: #90ee02 !important;
+        color: #e99802 !important;
       }
 
     </style>
@@ -53,7 +53,7 @@
             <label>Link</label>
             <md-input name="full_link" id="full_link" v-model="form.full_link" :disabled="sending"></md-input>
             <span class="md-error">
-              Deve ser uma URL válida.
+              Digite uma URL válida.
             </span>
           </md-field>
           <md-field :class="getValidationClass('short_name')">
@@ -61,13 +61,13 @@
             <span class="md-suffix">https://{{ host }}/</span>
             <md-input v-on:keyup="checkShortNameAvailable()" name="short_name" id="short_name" v-model="form.short_name" :disabled="sending"></md-input>
             <span class="md-error">
-              Deve conter apenas letras, números ou traço e pelo menos dois caracteres!
+              Digite no mínimo dois caracteres, sendo letras, números ou traço.
             </span>
             <md-icon v-if="shortNameAvailable !== false" :class="shortNameAvailableClass()">check</md-icon>
             <md-icon class="md-accent" v-if="shortNameAvailable === false">clear</md-icon>
           </md-field>
           <div>
-            <md-button type="submit" class="md-raised md-primary" :disabled="sending">Encurtar</md-button>
+            <md-button type="submit" class="md-raised md-primary" :disabled="sending">Gerar Url</md-button>
           </div>
         </form>
         <div>
