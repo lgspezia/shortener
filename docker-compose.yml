@@ -1,0 +1,18 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/usr/src/app
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "${PORT:-80}:80"
+    command: npm run dev.docker
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
